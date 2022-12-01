@@ -5,37 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
     <title>Gaming</title>
+    <style>
+        .status h3,
+        i {
+            display: inline;
+        }
+
+        .lifes {
+            float: right;
+        }
+
+        .score h3 {
+            float: right;
+        }
+    </style>
 </head>
 
 <body>
-    <img src="" alt="logo">
-    <br><br>
-    <nav>
-        <button>Avatar</button>
-        <select name="" id="">
-            <option value="">Settings</option>
-            <option value="">Sound</option>
-            <option value="">Tutorial</option>
-            <option value="">Help</option>
-            <option value="">About</option>
-            <option value="">Contact</option>
-        </select>
-    </nav>
-    <div>
+    <div class="score">
         <h1>Game</h1>
-        <h3>All Time Best Score</h3>
-        <h3>201617</h3>
-   </div>
-   <div>
-        <h1>Game Area</h1>
-   </div>
-   <div>
-        <h4>Level</h4>
+        <h3> 201617</h3>
+        <h3>All Time Best Score :</h3>
+    </div>
+    <h3>Score :</h3>
+    <div>
+        <img src="./images/game.webp" alt="game" width="1500" height="250">
+    </div>
+    <div class="status">
+        <h2>Level :</h2>
         <button>Play/Pause</button>
-        <span><h3>Score :</h3></span>
-        <h3>LifeLine</h3>
-   </div>
+        <br><br>
+        <nav>
+            <button>Avatar</button>
+            <select name="" id="">
+                <option value="">Settings</option>
+                <option value="">Sound</option>
+                <option value="">Tutorial</option>
+                <option value="">Help</option>
+                <option value="">About</option>
+                <option value="">Contact</option>
+            </select>
+            <div class="lifes">
+                <h3>LifeLine :</h3>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
+            </div>
+        </nav>
+
+    </div>
 </body>
 
 </html>

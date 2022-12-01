@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <style>
+        a {
+            color: aliceblue;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .column {
+            float: left;
+            padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
 </head>
+
 <body>
-    <nav>
-        <img src="" alt="logo">
+    <nav style="background-color:#4a4d4f;">
+        <!-- <img src="" alt="logo"> -->
         <div>
             <a href="">Home</a>
             <a href="">About Me</a>
@@ -18,34 +39,58 @@
         </div>
     </nav>
     <div>
-        <img src="" alt="Home">
+        <img src="./images/home.jpg" alt="Home" height="500">
     </div>
     <div>
         <h1>About me</h1>
-        <img src="" alt="Me">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum asperiores hic ducimus excepturi. Mollitia architecto, laudantium dolores odit recusandae eveniet pariatur fuga optio sapiente rem, blanditiis quae necessitatibus placeat explicabo.</p>
+        <img src="./images/about.jpg" alt="About">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum asperiores hic ducimus excepturi. Mollitia
+            architecto, laudantium dolores odit recusandae eveniet pariatur fuga optio sapiente rem, blanditiis quae
+            necessitatibus placeat explicabo.</p>
     </div>
-    <div>
-        <h1>Skills</h1>
-        <img src="" alt="C">
+    <h1>Skills</h1>
+    <!--
+    <div style="display: flex;">
+        <img src="./images/c.png" alt="C">
         <h3>Rating</h3>
-        <img src="" alt="C++">
+        <img src="./images/c++.png" alt="C++" width="220" height="250">
         <h3>Rating</h3>
-        <img src="" alt="Python">
+        <img src="./images/python.jpg" alt="Python">
         <h3>Rating</h3>
-        <img src="" alt="Web Development">
+        <img src="./images/web_dev.jpg" alt="Web Development" width="250">
         <h3>Rating</h3>
-        <img src="" alt="Machine Learning">
+        <img src="./images/ML.jpg" alt="Machine Learning" width="250">
         <h3>Rating</h3>
+    </div>-->
+    <div class="row">
+        <div class="column">
+            <img src="./images/c.png" alt="C" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="./images/c++.png" alt="C++" width="220" height="250">
+        </div>
+        <div class="column">
+            <img src="./images/python.jpg
+            " alt="Python" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="./images/web_dev.jpg" alt="Web Development" width="250">
+        </div>
+        <div class="column">
+            <img src="./images/ML.jpeg" alt="Machine Learning" width="280" height="200">
+        </div>
     </div>
     <div>
         <h1>Projects</h1>
-        <img src="" alt="project1">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sequi, aperiam nemo natus debitis quidem pariatur ipsam laborum ducimus corporis culpa dolorem laboriosam. Ipsa possimus sit quas nihil quis sed.</p>
+        <img src="./images/vignan_events.png" alt="vignan_events" width="800">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sequi, aperiam nemo natus debitis quidem
+            pariatur ipsam laborum ducimus corporis culpa dolorem laboriosam. Ipsa possimus sit quas nihil quis sed.</p>
         <button>click here for website</button>
         <br><br>
-        <img src="" alt="project2">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reiciendis explicabo labore quibusdam voluptates, minus magni libero illo odit maiores voluptas soluta quae aut nam modi ullam inventore nulla itaque.</p>
+        <img src="./images/cozy_ed.png" alt="cozy_ed" width="800">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reiciendis explicabo labore quibusdam
+            voluptates, minus magni libero illo odit maiores voluptas soluta quae aut nam modi ullam inventore nulla
+            itaque.</p>
         <button>click here for website</button>
     </div>
     <div>
@@ -55,4 +100,5 @@
         <h3>Linked In</h3>
     </div>
 </body>
+
 </html>
