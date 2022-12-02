@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color:#ccc8bc;
+}
+.icon{
+    position: absolute;
+    right: 40px;
+    top: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.ic{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    transform: translate(0,0);
+}
+img{
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 50%;
+    transform: translate(-50%,-120%);
+}
+form{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    border-radius:10px;
+    box-shadow: 0 0 10px #000000;
+}
+form input{
+    width: 500px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+form button{
+ /*   background-color:#ffffff;  */
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+form:hover button{
+    background-color:forestgreen;
+}
+ul{
+    position: absolute;
+    top: calc(50% + 100px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    display: flex;
+}
+li{
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+ul li a{
+    text-decoration: none;
+}
+ul li:nth-child(odd) a{
+    color:crimson;
+}
+ul li:nth-child(even) a{
+    color: darkviolet;
+}
+ul li:hover a{
+    color: black;
+}
+
