@@ -105,11 +105,23 @@ a,p,h4,h5,i{
 }
 
 /* REVIEW section */
+/* .banner{
+    display: flex;
+} */
+.review{
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+.review h1,h2,h3,h4{
+    color: aliceblue;
+}
 .movie_name{
-    padding: 10px;
+    padding: 30px;
 }
 .box1 h3,h4{
-    padding: 20px;
+    padding: 10px;
+    margin: -10px;
 }
 .box2 button{
     padding: 10px;
@@ -124,20 +136,38 @@ a,p,h4,h5,i{
     left: 20px;
     display: flex;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-top: -10px;
     border: 2px solid #000000;
     height: 80px;
     width: 450px;
 }
 .movie_time{
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    padding-top: 150px;
+    padding-left: 30px;
+    margin-top: -30px;
 }
-
+.movie_time button,h3{
+    padding: 5px;
+}
+.movie_time button{
+    color: aliceblue;
+    background-color: rgb(215, 57, 57);
+    border: none;
+    border-radius: 10px;
+    margin: 2px;
+    font-weight: bold;
+}
+.about_movie h2,h4{
+    padding: 10px;
+    padding-left: 30px;
+}
 /* CAST Section */
+.cast{
+    padding-top: 90px;
+}
 .cast h2{
     padding-left: 40px;
+    color: #000000;
 }
 .cast .images{
     display: flex;
@@ -153,7 +183,7 @@ a,p,h4,h5,i{
 footer{
     background-color: #454242;
     position: absolute;
-    top: 1300px;
+    top: 1000px;
     width: 100%;
     height: 500px;
 }

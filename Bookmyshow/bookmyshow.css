@@ -123,6 +123,9 @@ a,p,h4,h5,i{
     width: 270px;
     border-radius: 20px;
 }
+.card h4{
+    color: #000000;
+}
 /* 2nd BANNER */
 .banner2{
     position: absolute;
