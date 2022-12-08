@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Navbar Section */
+.navbar {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color:cyan;
+}
+button {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color:burlywood;
+    box-shadow: 0 0 10px #000000;
+}
+/* Pics Section */
+img{
+    height: 350px;
+    width: 300px;
+}
+.pics{
+    display: flex;
+    padding-left: 50px;
+    width: auto;
+    height: 500px;
+    background-color: chartreuse;
+}
+.pic1{
+    padding-top: 120px;
+    margin: 20px;
+}
+@media (max-width:1000px) {
+    .pics{
+        display: block;
+        height: 100%;
+    }
+    .navbar{
+        display: block;
+    }
+}

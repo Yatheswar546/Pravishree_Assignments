@@ -7,26 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book My Show</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        a{
-            color: aliceblue;
-        }
-        .movies{
-            display: flex;
-        }
-        img{
-            border-radius: 5%;
-        }
-        p,h5{
-            color: aliceblue;
-        }
-    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./bookmyshow.css">
 </head>
 
 <body>
+    <!-- NAVBAR search-section -->
     <nav>
-        <div style="background-color: #4a4848;">
-            <img src="./images/logo.png" alt="logo" width="150" height="50">
+        <div class="search">
+            <img src="./images/logo.png" alt="logo">
             <input type="text" name="" id="" placeholder="Search for Movies, Events, Plays, Sports an Activities">
             <select name="" id="">
                 <option value="">Vizag(Visakhapatnam)</option>
@@ -38,60 +27,105 @@
                 <option value="">Kolkata</option>
             </select>
             <button>Sign in</button>
+            <i class='bx bx-menu'></i>
         </div>
-        <div style="background-color: #2e2b2b">
-            <a href="">Movies</a>
-            <a href="">Stream <sup>NEW</sup></a>
-            <a href="">Events</a>
-            <a href="">Plays</a>
-            <a href="">Sports</a>
-            <a href="">Actvities</a>
-            <a href="">Buzz</a>
-        </div>
-        <div style="background-color: #2e2b2b">
-            <a href="">ListYourShow <sup>NEW</sup></a>
-            <a href="">Corporates</a>
-            <a href="">Offers</a>
-            <a href="">Gift Cards</a>
+        <!-- NAVBAR 2 -->
+        <div class="nav-bar2">  
+
+            <!-- NAVBAR - left -->
+            <div class="nav-left">
+                <div class="nav-left-links">
+                    <a href="">Movies</a>
+                    <a href="">Stream <sup style="color: red">NEW</sup></a>
+                    <a href="">Events</a>
+                    <a href="">Plays</a>
+                    <a href="">Sports</a>
+                    <a href="">Actvities</a>
+                    <a href="">Buzz</a>
+                </div>
+            </div>
+
+            <!-- NAVBAR - right -->
+            <div class="nav-right">
+                <div class="nav-right-links">
+                    <a href="">ListYourShow <sup style="color: red;">NEW</sup></a>
+                    <a href="">Corporates</a>
+                    <a href="">Offers</a>
+                    <a href="">Gift Cards</a>
+                </div>
+            </div>
         </div>
     </nav>
-    <div>
-        <img src="./images/banner.jpg" alt="banner" width="1500" height="500">
+
+    <!-- BANNER -->
+    <div class="banner1">
+        <img src="./images/banner.jpg" alt="banner" style="width: 1519px; height: 450px">
     </div>
-    <h1>Recommended Movies</h1>
-    <div class="movies">
-        <a href="movie_page.html"><img src="./images/love_today.avif" alt="Love Today" width="350" height="400"></a> 
-        <h2>Love Today</h2>
-        <h4>Drama/Romantic</h4>
-        <a href=""><img src="./images/hit_2.jpg" alt="HIT 2" width="350" height="400"></a>
-        <h2>HIT 2 : The Second Case</h2>
-        <h4>Crime/Thriller</h4>
-        <a href=""><img src="./images/masooda.jpg" alt="Masooda" width="350" height="400"></a>
-        <h2>Masooda</h2>
-        <h4>Horror/Thriller</h4>
-        <a href=""><img src="./images/yashoda.jpg" alt="Yashoda" width="350" height="400"></a>
-        <h2>Yashoda</h2>
-        <h4>Sci-Fi/Thriller</h4>
-        <a href=""><img src="./images/galodu.avif" alt="Galodu" width="350" height="400"></a>
-        <h2>Galodu</h2>
-        <h4>Action/Drama/Romantic</h4>
+
+    <!-- MOVIES SECTION -->
+    <div class="movies-section">
+        <h1>Recommended Movies</h1>
+        <div class="movies">
+            <div class="card">
+                <a href="movie_page.html"><img src="./images/love_today.avif" alt="Love Today"></a>
+                <h2>Love Today</h2>
+                <h4>Drama/Romantic</h4>
+            </div>
+            <div class="card">
+                <a href=""><img src="./images/hit_2.jpg" alt="HIT 2"></a>
+                <h2>HIT 2 : The Second Case</h2>
+                <h4>Crime/Thriller</h4>
+            </div>
+            <div class="card">
+                <a href=""><img src="./images/avatar.jpg" alt="Avatar"></a>
+                <h2>Avatar</h2>
+                <h4>Sci-Fi/Action</h4>
+            </div>
+            <div class="card">
+                <a href=""><img src="./images/yashoda.jpg" alt="Yashoda"></a>
+                <h2>Yashoda</h2>
+                <h4>Sci-Fi/Thriller</h4>
+            </div>
+            <div class="card">
+                <a href=""><img src="./images/black_panthar.jpg" alt="Black Panther"></a>
+                <h2>Black Panthar</h2>
+                <h4>Sci-Fi/Action</h4>
+            </div>
+        </div>
     </div>
-    <div>
-        <img src="./images/banner_2.jpg" alt="book my show" width="1500" height="150">
+
+    <!-- 2nd BANNER -->
+    <div class="banner2">
+        <img src="./images/banner_2.jpg" alt="book my show">
     </div>
-    <footer style="background-color: #454242;">
-        <div>
-            <b style="color: aliceblue;">List your show</b> <p>Got a show, event, activity or a great experience? Partner with us & get listed on BookMyShow</p>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- FOOTER 1 -->
+        <div class="footer1">
+            <h4>List your show</h4>
+            <p>Got a show, event, activity or a great experience? Partner with us & get listed on BookMyShow</p>
             <button>Contact today!</button>
         </div>
-        <div style="background-color: #2b2a2a;">
-            <ul>
-                <li><a href="">24/7 CUSTOMER CARE</a></li>
-                <li><a href="">RESEND BOOKING CONFIRMATION</a></li>
-                <li><a href="">SUBSCRIBE TO THE NEWSLETTER</a></li>
-            </ul>
+
+        <!-- FOOTER 2 -->
+        <div class="footer2">
+            <div class="cards">
+                <i class='bx bxs-user'></i>
+                <a href="">24/7 CUSTOMER CARE</a>
+            </div>
+            <div class="cards">
+                <i class='bx bxs-camera-movie'></i>
+                <a href="">RESEND BOOKING CONFIRMATION</a>
+            </div>
+            <div class="cards">
+                <i class='bx bx-mail-send'></i>
+                <a href="">SUBSCRIBE TO THE NEWSLETTER</a>
+            </div>
         </div>
-        <div>
+
+        <!-- FOOTER 3 -->
+        <div class="footer3">
             <h5>UPCOMING MOVIES IN VIZAG (VISAKHAPTANAM)</h5>
             <div>
                 <span><a href="">Gold |</a></span>
@@ -104,19 +138,17 @@
                 <span><a href="">Movies Now Showing </a></span>
             </div>
         </div>
-        <div>
-            <p>book my show</p>
-            <div>
+
+
+        <!-- FOOTER 4 -->
+        <div class="footer4">
+            <img src="./images/logo.png" alt="logo">
+            <div class="icons">
                 <i class="fa fa-facebook"></i>
                 <i class="fa fa-twitter"></i>
                 <i class="fa fa-instagram"></i>
                 <i class="fa fa-youtube"></i>
                 <i class="fa fa-linkedin"></i>
-            <!--    <a href="">facebook</a>
-                <a href="">twitter</a>
-                <a href="">instagram</a>
-                <a href="">youtube</a>
-                <a href="">linked</a>  -->
             </div>
         </div>
     </footer>

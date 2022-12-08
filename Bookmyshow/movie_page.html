@@ -7,28 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie_Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./moviepage.css">
     <style>
-        p,
-        h5 {
-            color: aliceblue;
-        }
-
-        a {
-            color: aliceblue;
-        }
-
-        .banner {
+        /* .banner {
             background-image: url("images/love-today.jpg");
             background-repeat: no-repeat;
             background-attachment: fixed;
-        }
-
+        } */
+/* 
         h2,
         h3 {
             display: inline;
         }
 
-        .box1 h3,
+        .box {
+            border: 2px solid #000000;
+            height: 80px;
+            width: 450px;
+        } */
+
+        /* .box1, .box2{
+            border: 2px solid #000000;
+        } */
+        /* .box1 h3,
         h4 {
             line-height: 0.0;
         }
@@ -36,9 +38,9 @@
         .box div {
             float: left;
             clear: none;
-        }
+        } */
 
-        button {
+        /* button {
             display: inline;
         }
 
@@ -48,14 +50,15 @@
 
         .cast img {
             border-radius: 20%;
-        }
-    </style>
+        } */
+    </style> 
 </head>
 
 <body>
+    <!-- NAVBAR search-section -->
     <nav>
-        <div style="background-color: #4a4848;">
-            <img src="./images/logo.png" alt="logo" width="150" height="50">
+        <div class="search">
+            <img src="./images/logo.png" alt="logo">
             <input type="text" name="" id="" placeholder="Search for Movies, Events, Plays, Sports an Activities">
             <select name="" id="">
                 <option value="">Vizag(Visakhapatnam)</option>
@@ -67,82 +70,115 @@
                 <option value="">Kolkata</option>
             </select>
             <button>Sign in</button>
+            <i class='bx bx-menu'></i>
         </div>
-        <div style="background-color: #2e2b2b">
-            <a href="">Movies</a>
-            <a href="">Stream <sup>NEW</sup></a>
-            <a href="">Events</a>
-            <a href="">Plays</a>
-            <a href="">Sports</a>
-            <a href="">Actvities</a>
-            <a href="">Buzz</a>
-        </div>
-        <div style="background-color: #2e2b2b">
-            <a href="">ListYourShow <sup>NEW</sup></a>
-            <a href="">Corporates</a>
-            <a href="">Offers</a>
-            <a href="">Gift Cards</a>
+        <!-- NAVBAR 2 -->
+        <div class="nav-bar2">
+
+            <!-- NAVBAR - left -->
+            <div class="nav-left">
+                <div class="nav-left-links">
+                    <a href="">Movies</a>
+                    <a href="">Stream <sup style="color: red">NEW</sup></a>
+                    <a href="">Events</a>
+                    <a href="">Plays</a>
+                    <a href="">Sports</a>
+                    <a href="">Actvities</a>
+                    <a href="">Buzz</a>
+                </div>
+            </div>
+
+            <!-- NAVBAR - right -->
+            <div class="nav-right">
+                <div class="nav-right-links">
+                    <a href="">ListYourShow <sup style="color: red;">NEW</sup></a>
+                    <a href="">Corporates</a>
+                    <a href="">Offers</a>
+                    <a href="">Gift Cards</a>
+                </div>
+            </div>
         </div>
     </nav>
-    <div class="banner">
-        <img src="./images/love_today.avif" alt="">
+
+    <!-- MOVIE POSTER -->
+    <div class="poster">
+        <img src="./images/love_today.avif" alt="poster">
     </div>
-    <div>
-        <h1>HIT: The 2nd Case</h1>
-        <span><i class="fa fa-thumbs-up" style="color:green; font-size: 35px;"></i></span>
-        <span>
-            <h2>61.8K</h2>
-        </span>
-        <span>
-            <h3>are interested</h3>
-        </span>
-    </div>
-    <br><br>
-    <div class="box">
-        <div class="box1">
-            <h3>Releasing on 2 Dec, 2022</h3>
-            <h4>Mark interested to know when bookings open</h4>
+
+    <!-- REVIEW section -->
+    <div class="review">
+        <div class="movie_name">
+            <h1>Love Today</h1>
+            <span><i class="fa fa-thumbs-up" style="color:green; font-size: 35px;"></i></span>
+            <span>
+                <h2>61.8K</h2>
+            </span>
+            <span>
+                <h3>are interested</h3>
+            </span>
         </div>
-        <div class="box2">
-            <button>I'm interested</button>
+        <div class="box">
+            <div class="box1">
+                <h3>Releasing on 2 Dec, 2022</h3>
+                <h4 style="color: #000000;">Mark interested to know when bookings open</h4>
+            </div>
+            <div class="box2">
+                <button>I'm interested</button>
+            </div>
         </div>
-    </div>
-    <br><br><br><br><br>
-    <div>
-        <button>2D</button>
-        <button>Telugu</button>
-        <br><br>
-        <h3>2h 34m</h3>
-        <h3>&#x2022; Drama,Romantic</h3>
-        <h3>&#x2022; UA</h3>
-        <button>Book Tickets</button>
-    </div>
-    <div>
-        <h2>About the movie</h2>
-        <h4>A witty father lays a trap by exchanging mobiles between a couple.</h4>
-    </div>
-    <h2>Cast</h2>
-    <div class="cast">
-        <img src="./images/cast_1.jpg" alt="cast1" width="380">
-        <img src="./images/cast_2.webp" alt="cast2" width="400">
-        <img src="./images/cast_3.jpg" alt="cast3" width="800">
-        <img src="./images/cast_4.jpg" alt="cast4" width="500">
-        <img src="./images/cast_5.webp" alt="cast5" width="450">
-    </div>
-    <footer style="background-color: #454242;">
-        <div>
-            <b style="color: aliceblue;">List your show</b>
+        <div class="movie_time">
+            <button>2D</button>
+            <button>Telugu</button>
+            <h3>2h 34m</h3>
+            <h3>&#x2022; Drama,Romantic</h3>
+            <h3>&#x2022; UA</h3>
+            <button>Book Tickets</button>
+        </div>
+        <!-- <div>
+            <h2>About the movie</h2>
+            <h4 style="color: #000000;">A witty father lays a trap by exchanging mobiles between a couple.</h4>
+        </div>
+    </div> -->
+    <!-- CAST section -->
+    <!-- <div class="cast">
+        <h2>Cast</h2>
+        <div class="images">
+            <img src="./images/cast1.avif" alt="cast1">
+            <img src="./images/cast2.avif" alt="cast2">
+            <img src="./images/cast3.avif" alt="cast3">
+            <img src="./images/cast4.avif" alt="cast4">
+            <img src="./images/cast5.avif" alt="cast5">
+            <img src="./images/cast6.avif" alt="cast6">
+        </div>
+    </div> -->
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- FOOTER 1 -->
+        <div class="footer1">
+            <h4>List your show</h4>
             <p>Got a show, event, activity or a great experience? Partner with us & get listed on BookMyShow</p>
             <button>Contact today!</button>
         </div>
-        <div style="background-color: #2b2a2a;">
-            <ul>
-                <li><a href="">24/7 CUSTOMER CARE</a></li>
-                <li><a href="">RESEND BOOKING CONFIRMATION</a></li>
-                <li><a href="">SUBSCRIBE TO THE NEWSLETTER</a></li>
-            </ul>
+
+        <!-- FOOTER 2 -->
+        <div class="footer2">
+            <div class="cards">
+                <i class='bx bxs-user'></i>
+                <a href="">24/7 CUSTOMER CARE</a>
+            </div>
+            <div class="cards">
+                <i class='bx bxs-camera-movie'></i>
+                <a href="">RESEND BOOKING CONFIRMATION</a>
+            </div>
+            <div class="cards">
+                <i class='bx bx-mail-send'></i>
+                <a href="">SUBSCRIBE TO THE NEWSLETTER</a>
+            </div>
         </div>
-        <div>
+
+        <!-- FOOTER 3 -->
+        <div class="footer3">
             <h5>UPCOMING MOVIES IN VIZAG (VISAKHAPTANAM)</h5>
             <div>
                 <span><a href="">Gold |</a></span>
@@ -155,19 +191,17 @@
                 <span><a href="">Movies Now Showing </a></span>
             </div>
         </div>
-        <div>
-            <p>book my show</p>
-            <div>
+
+
+        <!-- FOOTER 4 -->
+        <div class="footer4">
+            <img src="./images/logo.png" alt="logo">
+            <div class="icons">
                 <i class="fa fa-facebook"></i>
                 <i class="fa fa-twitter"></i>
                 <i class="fa fa-instagram"></i>
                 <i class="fa fa-youtube"></i>
                 <i class="fa fa-linkedin"></i>
-                <!--    <a href="">facebook</a>
-                <a href="">twitter</a>
-                <a href="">instagram</a>
-                <a href="">youtube</a>
-                <a href="">linked</a>  -->
             </div>
         </div>
     </footer>

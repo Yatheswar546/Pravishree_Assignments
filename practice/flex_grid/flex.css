@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.btns{
+    top: 1000px;
+    display: flex;
+    padding: 15px;
+}
+.btn{
+    text-decoration: none;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    color:black;
+    background-color:burlywood;
+    box-shadow: 0 0 10px #000000;
+    width: calc(100% / 5 - 20px);
+}
+.gallery{  
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.gallery img{
+    width: calc(100% / 4 - 30px);
+    height: 300px;
+    padding: 10px;
+}
+@media(max-width:1000px){
+    .gallery img{
+        width: calc(100% / 2 - 20px);
+    }
+    .btn {
+        width: calc(100% / 2 - 30px) !important;
+    }
+}
+@media(max-width:768px){
+    .gallery img{
+        width: calc(100% - 20px);
+    }
+    .btn{
+        width: calc(100% - 30px);
+    }
+}

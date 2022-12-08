@@ -54,7 +54,7 @@ form button{
     outline: none;
 }
 form:hover button{
-    background-color:forestgreen;
+    background-color:rgb(52, 150, 52);
 }
 ul{
     position: absolute;
@@ -82,3 +82,14 @@ ul li:hover a{
     color: black;
 }
 
+@media(max-width:1000px){
+    form{
+        width: calc(100% - 220px);
+    }
+    form input{
+        width: calc(100% - 80px);
+    }
+    ul{
+        display: grid;
+    }
+}
