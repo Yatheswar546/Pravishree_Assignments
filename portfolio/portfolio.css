@@ -12,6 +12,7 @@ nav{
     background-color:#1e8fda;
     padding: 30px;
     width: 1458px;
+    z-index: 100;
 }
 nav a{
     color: rgb(238, 231, 231);
@@ -32,24 +33,36 @@ nav a{
     background-color: #5ae898;
     width: 100%;
     height: 600px;
-}
-.intro img{
-    position: absolute;
-    padding: 30px;
-    top: 70px;
-    right: 200px;
-    border-radius: 60px;
-    width: auto;
-    height: 450px;
-}
-.intro .content{
-    width: 600px;
-    padding: 20px;
-    position: absolute;
-    top: 200px;
-    left: 300px;
+    position: relative;
+    z-index: 0;
 }
 
+.intro .content{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+} 
+.intro .content p{
+    width: 60%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 250px;
+    margin-left: 30px;
+}
+.intro .content img{
+    width: 40%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 30px;
+    border-radius: 60px;
+    width: auto;
+}
 
 /* ABOUT section */
 .about{
